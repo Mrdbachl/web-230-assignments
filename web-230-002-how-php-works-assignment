@@ -1,0 +1,24 @@
+WEB-230 | How PHP Works – Server Side Scripting – Assignment
+Explain the following:
+
+Identify and explain the differences between server side and client side.
+Server side script is produced on a web server, which then responds to a website where a client has made a request.
+Client side script is where scripts are embedded and run client side in the web browser (IE Javascript)
+
+Identify and explain the differences between scripting and programming languages.
+Scripts are either embedded into programming languages or they are used on the server side to create customized interfaces for users. 
+Programming languages are used on the client side and are viewable by the user within the web browser.
+
+
+Explain what type of language PHP is.
+PHP is a server side language that is also used as a general purpose programming language. 
+It can be embedded into HTML or HTML5, but on the web side, it usually needs an interpreter.
+
+
+Explain the process of a request from client to server and back to client.
+The client types in a page request that goes to the server, the server then processes the request and sends back the page to the client.
+
+
+Explain the differences between the different post types discussed in the video.
+The two different types that are explained are HTTP Get and HTTP Post. HTTP Get has character length limitations because it can only be as long as the url length. 
+The Get is also cached. The Post is not cached and there are no length limitations, so more information can be sent by the server. 
