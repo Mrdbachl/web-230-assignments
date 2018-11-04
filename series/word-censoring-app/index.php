@@ -1,6 +1,6 @@
 <?php
 
-$user_input = 'user_input';
+$user_input = '';
 $find = array('alex', 'billy','fork');
 $replace = array('a**x','b***y','f**k');
 
