@@ -1,10 +1,31 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<?php
 
-<body>
-</body>
-</html>
+require 'connect.inc.php';
+
+$query = "SELECT `food`, `calories` FROM `food` WHERE `healthy_unhealthy`='u' AND `calories`='700' ORDER BY `id` DESC";
+
+if ($query_run = mysqli_query($con, $query)) {
+	
+	if(mysqli_num_rows($query_run)==NULL) {
+		echo 'No results found.';
+		
+	} else {
+		
+	while ($query_row = mysqli_fetch_assoc($query_run)){
+		$food = $query_row['food'];
+		$calories = $query_row['calories'];
+		
+		echo $food.' has '.$calories. ' calories.<br>';
+		
+	}
+	}
+	mysqli_free_result($query_run);
+	
+	mysqli_close($con);
+	
+} else {
+	
+	echo ("Error description: ".mysqli_error($con));
+}
+
+?>
